@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--CountDownTimerView-->
+    <declare-styleable name="CountDownTimerView">
+        <attr name="viewSize" format="integer"/>
+    </declare-styleable>
+</resources>
