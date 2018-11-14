@@ -9,8 +9,7 @@ import com.example.sb_cm.rjwwidget.countdownview.CountDownTimerView;
 import com.example.sb_cm.rjwwidget.countdownview.OnTimerFinishListener;
 
 public class MainActivity extends AppCompatActivity {
-
-
+    //test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
