@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.app.hubert.guide.NewbieGuide;
+import com.app.hubert.guide.model.GuidePage;
 import com.example.sb_cm.rjwwidget.countdownview.CountDownTimerView;
 import com.example.sb_cm.rjwwidget.countdownview.OnTimerFinishListener;
 
@@ -12,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     //test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CountDownTimerView countDownTimerProcess = (CountDownTimerView) findViewById(R.id.countdown);
@@ -27,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
 }
