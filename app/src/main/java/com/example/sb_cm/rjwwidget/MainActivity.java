@@ -12,7 +12,7 @@ import com.example.sb_cm.rjwwidget.countdownview.OnTimerFinishListener;
 
 public class MainActivity extends AppCompatActivity {
     //test
-    //dev test
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
