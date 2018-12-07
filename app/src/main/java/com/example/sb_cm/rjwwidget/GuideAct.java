@@ -14,6 +14,7 @@ import com.app.hubert.guide.listener.OnLayoutInflatedListener;
 import com.app.hubert.guide.listener.OnPageChangedListener;
 import com.app.hubert.guide.model.GuidePage;
 import com.app.hubert.guide.model.HighLight;
+import com.tencent.bugly.crashreport.CrashReport;
 
 /**
  * Desc:
@@ -22,8 +23,6 @@ import com.app.hubert.guide.model.HighLight;
  */
 public class GuideAct extends AppCompatActivity {
     private AppCompatButton btn1, btn2, btn3;
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +36,8 @@ public class GuideAct extends AppCompatActivity {
     }
 
     private void initGuide() {
+
+        CrashReport.testJavaCrash();
         NewbieGuide.with(this)
                 .setLabel("home")//设置引导层标示区分不同引导层，必传！否则报错
                 .alwaysShow(true)//是否每次都显示引导层，默认false，只显示一次
