@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.act_tab);
 
         ball = findViewById(R.id.ball_view);
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             list.add(new TaskModel(i + "", i + "test", i + ""));
         }
         if (list != null) {

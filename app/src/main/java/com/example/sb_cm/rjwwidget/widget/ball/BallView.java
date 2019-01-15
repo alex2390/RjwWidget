@@ -66,7 +66,7 @@ public class BallView extends View {
         }
     }
 
-    private int mCount = 100;   // 小球个数
+    private int mCount = 10;   // 小球个数
     private int maxRadius;  // 小球最大半径
     private int minRadius; // 小球最小半径
     private int minSpeed = 1; // 小球最小移动速度
