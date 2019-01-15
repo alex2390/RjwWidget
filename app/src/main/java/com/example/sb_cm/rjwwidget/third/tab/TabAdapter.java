@@ -1,9 +1,7 @@
-package com.example.sb_cm.rjwwidget.tab;
+package com.example.sb_cm.rjwwidget.third.tab;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import java.util.List;
 
 /**
  * Desc:

@@ -1,4 +1,4 @@
-package com.example.sb_cm.rjwwidget;
+package com.example.sb_cm.rjwwidget.widget;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatTextView;

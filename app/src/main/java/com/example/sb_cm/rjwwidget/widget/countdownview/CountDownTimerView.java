@@ -1,4 +1,4 @@
-package com.example.sb_cm.rjwwidget.countdownview;
+package com.example.sb_cm.rjwwidget.widget.countdownview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

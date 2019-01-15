@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sb_cm.rjwwidget.MainActivity">
-    <com.example.sb_cm.rjwwidget.countdownview.CountDownTimerView
+    <com.example.sb_cm.rjwwidget.widget.countdownview.CountDownTimerView
         android:layout_width="wrap_content"
         android:id="@+id/countdown"
         android:layout_height="wrap_content">
 
-    </com.example.sb_cm.rjwwidget.countdownview.CountDownTimerView>
+    </com.example.sb_cm.rjwwidget.widget.countdownview.CountDownTimerView>
 
 
 </android.support.constraint.ConstraintLayout>

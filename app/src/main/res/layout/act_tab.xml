@@ -19,12 +19,21 @@
         app:tl_underline_color="@color/colorAccent"
         app:tl_underline_height="2dp">
     </com.flyco.tablayout.SlidingTabLayout>
-    <com.example.sb_cm.rjwwidget.ScrollTextView
+    <com.example.sb_cm.rjwwidget.widget.ScrollTextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:padding="12dp"
         android:text="测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。测试自动滚动的文字。。。。" />
 
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:textColor="@color/colorPrimary"
+        android:text="100"
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
