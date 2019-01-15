@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="x5">2dp</dimen>
+
+    <dimen name="x32">15sp</dimen>
+</resources>

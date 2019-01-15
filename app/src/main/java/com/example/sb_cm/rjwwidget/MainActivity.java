@@ -7,39 +7,38 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.sb_cm.rjwwidget.third.tab.TabAdapter;
+import com.example.sb_cm.rjwwidget.widget.ball.BallView;
+import com.example.sb_cm.rjwwidget.widget.ball.TaskModel;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+    private BallView ball = null;
+    private ArrayList<TaskModel> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_tab);
-        SlidingTabLayout tabLayout = findViewById(R.id.tablayout);
-        ViewPager viewPager = findViewById(R.id.view_pager);
-        String[] list = {"全部采购", "第一條", "第一條", "第一", "第一條", "第一條"};
-        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
-        tabLayout.setViewPager(viewPager, list);
-        tabLayout.setOnTabSelectListener(new OnTabSelectListener() {
-            @Override
-            public void onTabSelect(int position) {
 
-            }
-
-            @Override
-            public void onTabReselect(int position) {
-
-            }
-        });
-        findViewById(R.id.tv_start).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               
+        ball = findViewById(R.id.ball_view);
+        for (int i = 0; i < 100; i++) {
+            list.add(new TaskModel(i + "", i + "test", i + ""));
+        }
+        if (list != null) {
+            ball.setData(list);
+            ball.requestLayout();
+            ball.setBallViewListener(new BallView.BallViewListener() {
+                @Override
+                public void getTaskId(String taskId) {
 
 
-            }
-        });
+                }
+            });
+        }
 
 
     }
