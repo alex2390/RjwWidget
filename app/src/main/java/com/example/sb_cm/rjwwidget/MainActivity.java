@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sb_cm.rjwwidget.third.AliEvent.AliEventUtil;
 import com.example.sb_cm.rjwwidget.third.tab.TabAdapter;
 import com.example.sb_cm.rjwwidget.widget.ball.BallView;
 import com.example.sb_cm.rjwwidget.widget.ball.TaskModel;
@@ -39,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+        findViewById(R.id.tv_click).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AliEventUtil.addEventLog("Home","test","click");
+                AliEventUtil.add();
+
+            }
+        });
 
 
     }
